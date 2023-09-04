@@ -22,6 +22,7 @@ const int servoPin8 = 9;
 const int servoPin9 = 10;
 const int servoPin10 = 11;
 
+ // ค่าเริ่มต้นค่ากึ่งกลางของservo--------------------------------------------------------------
 int valueservo1 = 84;
 int valueservo2 = 95;
 int valueservo3 = 90 ;
@@ -33,7 +34,7 @@ int valueservo7 = 90;
 int valueservo8 = 88;
 int valueservo9 = 98;
 int valueservo10 = 80;
-
+//-----------------------------------------------------------------------------------------
 void setup() {
   servo2.attach(servoPin1);
   servo3.attach(servoPin2);
@@ -63,7 +64,7 @@ void loop() {
 
 
 }
-void stand()
+void stand() 
 {
   servo2.write(valueservo1, 60, false); //servo.write(Degree of servo , speed , false) : use false for make all of servo working at the same time.
   servo3.write(valueservo2, 60, false);
@@ -78,7 +79,7 @@ void stand()
 }
 
 
-void forward()
+void forward() 
 {
   //---------------1---------------------------------------------------
 
