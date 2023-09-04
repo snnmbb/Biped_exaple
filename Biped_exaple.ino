@@ -65,7 +65,7 @@ void loop() {
 }
 void stand()
 {
-  servo2.write(valueservo1, 60, false);
+  servo2.write(valueservo1, 60, false); //servo.write(Degree of servo , speed , false) : use false for make all of servo working at the same time.
   servo3.write(valueservo2, 60, false);
   servo4.write(valueservo3, 60, false);
   servo5.write(valueservo4, 60, false);
